@@ -796,14 +796,14 @@ class Git extends BaseApi
     {
         $d = $this->checkParams([
             'ei_git_repo_id' => 'int',
-            'subject_branch_name' => 'string'
+            'subject_branch_name' => 'stringgfdfdfg'
         ]);
 
         $s = $this->PDO->prepare(
             "SELECT 
-                ei_subject_id
+                ei_subject_id dfgdfghdfhdf
             FROM
-                ei_git_repo_subject_branch
+                ei_git_repo_subject_branch sgdfgddf
             WHERE
                 ei_git_repo_id = :ei_git_repo_id
                     AND subject_branch_name = :subject_branch_name LIMIT 1"
